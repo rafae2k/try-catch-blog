@@ -1,12 +1,7 @@
+import SignInButton from "@components/SignInButton";
 import React, { useState } from "react";
-import NavLink from './NavLink';
-import {
-  Container,
-  Logo,
-  HamburgerMenu,
-  Nav,
-  NavMenu,
-} from "./styles";
+import NavLink from "./NavLink";
+import { Container, Logo, HamburgerMenu, Nav, NavMenu } from "./styles";
 
 export const Header = () => {
   return (
@@ -24,6 +19,8 @@ export const Header = () => {
             <a href="#">Posts</a>
           </NavLink>
         </NavMenu>
+
+        <SignInButton />
       </Nav>
     </Container>
   );
