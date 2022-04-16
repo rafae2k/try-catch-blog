@@ -3,7 +3,7 @@ import { NavLinkProps } from ".";
 
 export const Container = styled.div<NavLinkProps>`
   position: relative;
-  display: flex;
+  display: inline-flex;
   align-items: center;
 
   a {
