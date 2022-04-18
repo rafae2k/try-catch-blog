@@ -5,8 +5,16 @@ export const Container = styled.header`
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: #1a1d23;
-  border-bottom: 0.1rem solid #535353;
+  background-color: ${({ theme }) => theme.colors.neutral[100]};
+  border-bottom: 0.1rem solid ${({ theme }) => theme.colors.primary[50]};
+  height: 7rem;
+  z-index: 100;
+
+  button {
+    @media (max-width: 700px) {
+      display: none;
+    }
+  }
 `;
 
 export const Nav = styled.nav`
@@ -15,7 +23,6 @@ export const Nav = styled.nav`
   align-items: center;
   width: 100%;
   max-width: 102.4rem;
-  padding: 1.6rem 0 0;
 `;
 
 export const NavMenu = styled.nav`
@@ -23,6 +30,15 @@ export const NavMenu = styled.nav`
   gap: 3rem;
   font-size: 1.6rem;
   height: 100%;
+  margin-left: 5rem;
+  width: 100%;
+
+  div:nth-child(3) {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 1rem;
+  }
 
   @media (max-width: 700px) {
     display: none;
@@ -32,14 +48,13 @@ export const NavMenu = styled.nav`
 export const Logo = styled.img`
   height: 3rem;
   width: auto;
-  margin-bottom: 1.6rem;
+  cursor: pointer;
 `;
 
 export const HamburgerMenu = styled(FiMenu)`
-  color: #fff;
+  color: ${({ theme }) => theme.colors.heading};
   width: 4.4rem;
   height: 4.4rem;
-  margin-bottom: 1.6rem;
   display: none;
 
   @media (max-width: 700px) {
