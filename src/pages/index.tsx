@@ -1,20 +1,14 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Wrapper } from "@components/Wrapper";
-import GlobalStyle from "@styles/GlobalStyles";
-
-import { Header } from "../components/Header";
+import { Container } from "@styles/index.styles";
 
 const Home: NextPage = () => {
   return (
-    <Wrapper>
-      <GlobalStyle />
+    <Container>
       <Head>
         <title> Home | Try...Catch </title>
       </Head>
-
-      <Header />
-    </Wrapper>
+    </Container>
   );
 };
 
