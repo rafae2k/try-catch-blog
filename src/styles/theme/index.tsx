@@ -9,7 +9,7 @@ import { dark } from "./dark";
 import { light } from "./light";
 
 export const ThemeContext = React.createContext({
-  theme: "light",
+  theme: "dark",
   toggle: () => undefined,
 });
 
@@ -30,7 +30,7 @@ type StyledThemeProviderProps = {
 export const StyledThemeProvider: React.FC<StyledThemeProviderProps> = ({
   children,
 }) => {
-  const [theme, setTheme] = React.useState("light");
+  const [theme, setTheme] = React.useState("dark");
 
   const toggle = () => {
     setTheme((theme) => (theme === "light" ? "dark" : "light"));
@@ -51,5 +51,3 @@ export const StyledThemeProvider: React.FC<StyledThemeProviderProps> = ({
     </ThemeContext.Provider>
   );
 };
-
-
