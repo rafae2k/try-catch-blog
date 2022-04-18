@@ -9,8 +9,7 @@ export const Container = styled.div<NavLinkProps>`
   a {
     font-size: 1.6rem;
     font-weight: bold;
-    color: #fff;
-    padding-bottom: 1rem;
+    color: ${({ theme }) => theme.colors.neutral.white};
   }
 
   :before {
@@ -21,7 +20,7 @@ export const Container = styled.div<NavLinkProps>`
     bottom: 0;
     right: 0;
     border-radius: 0.3rem 0.3rem 0 0;
-    background-color: #ff57b2;
+    background-color: ${({ theme }) => theme.colors.primary[50]};
     opacity: ${({ isActive }) => (isActive ? 1 : 0)};
     transition: opacity 0.2s ease-out;
   }
