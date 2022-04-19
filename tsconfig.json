@@ -21,6 +21,7 @@
       "@interfaces": ["src/interfaces"],
       "@components/*": ["src/components/*"],
       "@components": ["src/components"],
+      "@services/*": ["src/services/*"],
       "@styles/*": ["src/styles/*"],
       "@styles": ["src/styles"],
       "@public/*": ["public/*"],
