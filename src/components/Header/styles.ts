@@ -19,7 +19,8 @@ export const Container = styled.header`
 
 export const Nav = styled.nav`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 2rem;
   align-items: center;
   width: 100%;
   max-width: 102.4rem;
