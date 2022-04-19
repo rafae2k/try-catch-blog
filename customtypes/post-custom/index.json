@@ -1,0 +1,9 @@
+{
+  "id": "post-custom",
+  "label": "post-custom",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {}
+  }
+}
