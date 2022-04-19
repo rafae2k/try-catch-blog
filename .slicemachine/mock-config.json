@@ -1,0 +1,26 @@
+{
+  "_cts": {
+    "blog-post": {},
+    "post-custom": {}
+  },
+  "slices": {
+    "Post": {
+      "default": {
+        "primary": {
+          "content": {
+            "config": {
+              "patternType": "STORY",
+              "blocks": 5
+            }
+          },
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}
