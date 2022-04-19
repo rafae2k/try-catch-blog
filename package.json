@@ -10,10 +10,16 @@
     "lint:css": "stylelint './src/**/styles.ts'",
     "test": "jest --watch",
     "storybook": "start-storybook -p 6006 -s ./public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "slicemachine": "start-slicemachine"
   },
   "dependencies": {
+    "@prismicio/client": "^6.4.3",
+    "@prismicio/helpers": "^2.3.0",
+    "@prismicio/react": "^2.3.0",
+    "@prismicio/slice-simulator-react": "^0.2.2",
     "next": "12.1.4",
+    "nextjs-progressbar": "^0.0.14",
     "react": "18.0.0",
     "react-dark-mode-toggle": "^0.2.0",
     "react-dom": "18.0.0",
@@ -49,6 +55,7 @@
     "jest": "^27.5.1",
     "postcss-syntax": "^0.36.2",
     "prettier": "2.6.2",
+    "slice-machine-ui": "^0.3.7",
     "stylelint": "^14.7.0",
     "stylelint-config-recommended": "^7.0.0",
     "stylelint-config-styled-components": "^0.1.1",
