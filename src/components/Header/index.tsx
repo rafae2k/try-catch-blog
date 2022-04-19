@@ -19,7 +19,7 @@ export const Header = () => {
           <NavLink href="/">
             <a>Home</a>
           </NavLink>
-          <NavLink href="/posts" prefetch>
+          <NavLink href="/posts">
             <a>Posts</a>
           </NavLink>
           <div>
