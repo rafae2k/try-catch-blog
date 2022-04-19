@@ -15,6 +15,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: sans-serif;
     min-height: 100vh;
     background-color: ${({ theme }) => theme.colors.background};
+    color: ${({ theme }) => theme.colors.heading};
   }
 
   ul {
