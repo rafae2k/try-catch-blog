@@ -1,13 +1,20 @@
 import styled from "styled-components";
 import { FiMenu } from "react-icons/fi";
 
-export const Container = styled.header`
+type HeaderProps = {
+  navUp?: boolean;
+};
+
+export const Container = styled.header<HeaderProps>`
   display: flex;
   justify-content: center;
   width: 100%;
+  height: 7rem;
+  position: fixed;
+  top: ${({ navUp }) => (navUp ? "-7rem" : "0")};
+  transition: top 0.2s ease-in-out;
   background-color: ${({ theme }) => theme.colors.neutral[100]};
   border-bottom: 0.1rem solid ${({ theme }) => theme.colors.primary[50]};
-  height: 7rem;
   z-index: 100;
 
   button {
