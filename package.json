@@ -29,6 +29,7 @@
     "@babel/core": "^7.17.9",
     "@babel/preset-env": "^7.16.11",
     "@prismicio/slice-simulator-react": "^0.2.2",
+    "@prismicio/types": "^0.1.27",
     "@storybook/addon-actions": "^6.4.21",
     "@storybook/addon-docs": "^6.4.21",
     "@storybook/addon-essentials": "^6.4.21",
