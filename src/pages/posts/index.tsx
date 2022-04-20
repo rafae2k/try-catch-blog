@@ -10,14 +10,13 @@ import Wrapper from "@components/Wrapper";
 import { BsCalendarDateFill } from "react-icons/bs";
 import { FaUser } from "react-icons/fa";
 
-import { Article, PostInfo } from "./styles";
+import { Article, PostInfo } from "./index.styles";
 
 type PostsProps = {
   posts: Post[];
 };
 
 const Posts: NextPage<PostsProps> = ({ posts }) => {
-  console.log(posts);
   return (
     <>
       <Head>
