@@ -1,11 +1,5 @@
 import styled from "styled-components";
 
-// img {
-//   max-height: 40rem;
-//   width: max-content;
-//   margin-bottom: 2rem;
-// }
-
 export const Article = styled.article`
   margin-top: 4rem;
   font-size: calc(1.4rem);
@@ -66,10 +60,17 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  padding-bottom: 4rem;
 
   p {
     font-size: 1.6rem;
     line-height: 2.5rem;
     color: ${({ theme }) => theme.colors.body};
+  }
+
+  ul {
+    li {
+      padding-bottom: 1rem;
+    }
   }
 `;
