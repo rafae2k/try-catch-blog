@@ -8,7 +8,7 @@ import Wrapper from "@components/Wrapper";
 import { BsCalendarDateFill } from "react-icons/bs";
 import { FaUser } from "react-icons/fa";
 
-import { Article, PostInfo } from "./slug.styles";
+import { Article, PostInfo, Header, Content } from "./slug.styles";
 
 type Props = {
   post: {
@@ -33,24 +33,28 @@ const Post: NextPage<Props> = ({ post }) => {
       <Wrapper>
         <img src={post.thumbnail.url} alt={post.thumbnail.alt} />
         <Article>
-          <h1>{post.title}</h1>
-          <PostInfo>
-            <div>
-              <BsCalendarDateFill />
-              <time itemProp="dateCreated datePublished">
-                {new Date(post.datePublished).toLocaleDateString("pt-BR", {
-                  day: "2-digit",
-                  month: "long",
-                  year: "numeric",
-                })}
-              </time>
-            </div>
-            <div>
-              <FaUser />
-              <p itemProp="author publisher name">{post.author}</p>
-            </div>
-          </PostInfo>
-          <PrismicRichText field={post.content} />
+          <Header>
+            <h1>{post.title}</h1>
+            <PostInfo>
+              <div>
+                <BsCalendarDateFill />
+                <time itemProp="dateCreated datePublished">
+                  {new Date(post.datePublished).toLocaleDateString("pt-BR", {
+                    day: "2-digit",
+                    month: "long",
+                    year: "numeric",
+                  })}
+                </time>
+              </div>
+              <div>
+                <FaUser />
+                <p itemProp="author publisher name">{post.author}</p>
+              </div>
+            </PostInfo>
+          </Header>
+          <Content>
+            <PrismicRichText field={post.content} />
+          </Content>
         </Article>
       </Wrapper>
     </>
