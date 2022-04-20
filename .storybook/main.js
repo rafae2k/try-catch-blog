@@ -6,6 +6,7 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-controls",
+    "storybook-addon-next-router",
     {
       name: "@storybook/addon-docs",
       options: {
