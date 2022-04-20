@@ -1,6 +1,6 @@
 import React from "react";
 import { useTheme } from "@styles/theme";
-import { useUtterances } from "../../hooks/useScript";
+import { useUtterances } from "../../hooks/useUtterances";
 
 const commentNodeId = "comments";
 
