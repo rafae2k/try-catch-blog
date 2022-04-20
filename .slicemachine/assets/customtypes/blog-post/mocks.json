@@ -1,8 +1,17 @@
 {
-  "id": "73194f46-0f75-41ef-a833-d7fceacd6f05",
-  "uid": "rerum-officiis-occaecati",
+  "id": "94bc15eb-0734-42a1-af5b-52caef488ab8",
+  "uid": "voluptas-mollitia-beatae",
   "type": "blog-post",
   "data": {
-    "author": "whiteboard one-to-one infrastructures"
+    "author": "optimize best-of-breed markets",
+    "thumbnail": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a?w=900&h=500&fit=crop"
+    }
   }
 }
