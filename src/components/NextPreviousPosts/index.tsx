@@ -1,15 +1,10 @@
-import React, { SetStateAction, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import * as prismicT from "@prismicio/types";
-import { Post } from "@definitions/Interfaces/prismic/slices";
 import { createClient } from "@services/prismic";
 
 import { Container } from "./styles";
-
-interface NextPreviousPostsProps {}
-
-type Posts = [Post];
 
 type PrismicDocumentPage = prismicT.PrismicDocument;
 
@@ -32,7 +27,7 @@ function NextPreviousPosts() {
   return (
     <Container>
       {posts.length > 0 && posts[postIndex - 1] && (
-        <Link href={`/posts/${posts[postIndex - 1].uid}`}>
+        <Link href={`/posts/${posts[postIndex - 1].uid}`} passHref>
           <div>
             <h3>Post Anterior</h3>
             <p>{posts[postIndex - 1].data.slices[0].primary.title[0].text}</p>
@@ -40,7 +35,7 @@ function NextPreviousPosts() {
         </Link>
       )}
       {posts.length > 0 && posts[postIndex + 1] && (
-        <Link href={`/posts/${posts[postIndex + 1].uid}`}>
+        <Link href={`/posts/${posts[postIndex + 1].uid}`} passHref>
           <div>
             <h3>Próximo post</h3>
             <p>{posts[postIndex + 1].data.slices[0].primary.title[0].text}</p>

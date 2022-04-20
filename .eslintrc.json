@@ -4,13 +4,7 @@
   "parserOptions": {
     "project": "./tsconfig.json"
   },
-  "extends": [
-    "next",
-    "airbnb",
-    "airbnb-typescript",
-    "airbnb/hooks",
-    "prettier"
-  ],
+  "extends": ["next", "airbnb-typescript", "prettier"],
   "plugins": ["@typescript-eslint", "react", "jsx-a11y", "prettier"],
   "env": {
     "browser": true,
@@ -20,6 +14,7 @@
   "ignorePatterns": "*.config.ts",
   "rules": {
     "import/prefer-default-export": "off",
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-props-no-spreading": "off",
+    "import/no-extraneous-dependencies": "off"
   }
 }

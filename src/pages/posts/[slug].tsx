@@ -9,8 +9,8 @@ import Comments from "@components/Comments";
 import { BsCalendarDateFill } from "react-icons/bs";
 import { FaUser } from "react-icons/fa";
 
-import { Article, PostInfo, Header, Content } from "./slug.styles";
 import NextPreviousPosts from "@components/NextPreviousPosts";
+import { Article, PostInfo, Header, Content } from "./slug.styles";
 
 type Props = {
   post: {
@@ -26,51 +26,47 @@ type Props = {
   };
 };
 
-const Post: NextPage<Props> = ({ post }) => {
-  return (
-    <>
-      <Head>
-        <title>{post.title} | Try...Catch</title>
-      </Head>
-      <Wrapper>
-        <img src={post.thumbnail.url} alt={post.thumbnail.alt} />
-        <Article>
-          <Header>
-            <h1>{post.title}</h1>
-            <PostInfo>
-              <div>
-                <BsCalendarDateFill />
-                <time itemProp="dateCreated datePublished">
-                  {new Date(post.datePublished).toLocaleDateString("pt-BR", {
-                    day: "2-digit",
-                    month: "long",
-                    year: "numeric",
-                  })}
-                </time>
-              </div>
-              <div>
-                <FaUser />
-                <p itemProp="author publisher name">{post.author}</p>
-              </div>
-            </PostInfo>
-          </Header>
-          <Content>
-            <PrismicRichText field={post.content} />
-          </Content>
-        </Article>
-        <NextPreviousPosts />
-        <Comments />
-      </Wrapper>
-    </>
-  );
-};
+const Post: NextPage<Props> = ({ post }) => (
+  <>
+    <Head>
+      <title>{post.title} | Try...Catch</title>
+    </Head>
+    <Wrapper>
+      <img src={post.thumbnail.url} alt={post.thumbnail.alt} />
+      <Article>
+        <Header>
+          <h1>{post.title}</h1>
+          <PostInfo>
+            <div>
+              <BsCalendarDateFill />
+              <time itemProp="dateCreated datePublished">
+                {new Date(post.datePublished).toLocaleDateString("pt-BR", {
+                  day: "2-digit",
+                  month: "long",
+                  year: "numeric",
+                })}
+              </time>
+            </div>
+            <div>
+              <FaUser />
+              <p itemProp="author publisher name">{post.author}</p>
+            </div>
+          </PostInfo>
+        </Header>
+        <Content>
+          <PrismicRichText field={post.content} />
+        </Content>
+      </Article>
+      <NextPreviousPosts />
+      <Comments />
+    </Wrapper>
+  </>
+);
 
-export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
-  return {
-    paths: [], //indicates that no page needs be created at build time
-    fallback: "blocking", //indicates the type of fallback
-  };
-};
+export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => ({
+  paths: [], // indicates that no page needs be created at build time
+  fallback: "blocking", // indicates the type of fallback
+});
 
 type Params = {
   params: {

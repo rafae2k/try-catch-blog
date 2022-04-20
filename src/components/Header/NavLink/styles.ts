@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { NavLinkProps } from ".";
 
 export interface Props {
   isActive?: boolean;

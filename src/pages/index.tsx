@@ -1,8 +1,8 @@
-import type { NextPage } from "next";
+import React from "react";
 import Head from "next/head";
 import { Container } from "@styles/index.styles";
 
-const Home: NextPage = () => {
+function Home() {
   return (
     <Container>
       <Head>
@@ -10,6 +10,6 @@ const Home: NextPage = () => {
       </Head>
     </Container>
   );
-};
+}
 
 export default Home;

@@ -1,19 +1,18 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import NavLink from "../NavLink";
-import { NavLinkProps } from "@components/Header/NavLink";
+import NavLink, { NavLinkProps } from "@components/Header/NavLink";
 
 export default {
   title: "Components/NavLink",
   component: NavLink,
 } as ComponentMeta<typeof NavLink>;
 
-const Template = (args: NavLinkProps) => (
-  <NavLink {...args}>
+function Template(args: NavLinkProps) {
+  return <NavLink {...args}>
     <a>Click Me</a>
   </NavLink>
-);
+}
 
 export const Default: ComponentStory<typeof NavLink> = Template.bind({});
 

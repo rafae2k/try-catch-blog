@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useTheme } from "@styles/theme";
 import DarkModeToggle from "react-dark-mode-toggle";
 

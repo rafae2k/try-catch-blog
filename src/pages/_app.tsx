@@ -1,9 +1,9 @@
+import React from "react";
 import type { AppProps } from "next/app";
-import { Header } from "../components/Header";
 import GlobalStyle from "@styles/GlobalStyles";
-import { StyledThemeProvider } from "@styles/theme";
+import { StyledThemeProvider, useTheme } from "@styles/theme";
 import NextNProgress from "nextjs-progressbar";
-import { useTheme } from "@styles/theme";
+import { Header } from "../components/Header";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const { theme } = useTheme();

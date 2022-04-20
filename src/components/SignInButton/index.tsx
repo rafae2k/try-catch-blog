@@ -1,18 +1,16 @@
 import React from "react";
-import { Container } from "./styles";
 import { FaGithub } from "react-icons/fa";
+import { Container } from "./styles";
 
 interface SignInButtonProps {
   children?: React.ReactNode;
 }
 
-const SignInButton: React.FC<SignInButtonProps> = () => {
-  return (
+const SignInButton: React.FC<SignInButtonProps> = () => (
     <Container>
       <FaGithub />
       Sign in with GitHub
     </Container>
   );
-};
 
 export default SignInButton;

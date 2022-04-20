@@ -4,7 +4,7 @@ import { useUtterances } from "../../hooks/useUtterances";
 
 const commentNodeId = "comments";
 
-const Comments = () => {
+function Comments() {
   const { theme } = useTheme();
 
   const utterancesTheme =
@@ -17,6 +17,6 @@ const Comments = () => {
       <div id={commentNodeId} />
     </div>
   );
-};
+}
 
 export default Comments;

@@ -5,7 +5,7 @@ import Toggle from "@components/Header/Toggle";
 import NavLink from "@components/Header/NavLink";
 import { Container, Logo, HamburgerMenu, Nav, NavMenu } from "./styles";
 
-export const Header = () => {
+export function Header() {
   const [show, setShow] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -32,14 +32,14 @@ export const Header = () => {
   return (
     <Container navUp={show}>
       <Nav>
-        <Link href="/">
+        <Link href="/" passHref>
           <Logo src="/images/logo.svg" alt="Try...catch logo" />
         </Link>
 
         <HamburgerMenu />
 
         <NavMenu>
-          <NavLink href="/">
+          <NavLink href="/" passHref>
             <a>Home</a>
           </NavLink>
           <NavLink href="/posts">
@@ -53,4 +53,4 @@ export const Header = () => {
       </Nav>
     </Container>
   );
-};
+}
