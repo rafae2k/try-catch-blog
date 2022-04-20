@@ -1,7 +1,11 @@
 import styled from "styled-components";
 import { NavLinkProps } from ".";
 
-export const Container = styled.div<NavLinkProps>`
+export interface Props {
+  isActive?: boolean;
+}
+
+export const Container = styled.div<Props>`
   position: relative;
   display: inline-flex;
   align-items: center;

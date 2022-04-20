@@ -6,7 +6,6 @@ import { Container } from "./styles";
 
 export interface NavLinkProps extends LinkProps {
   children: ReactNode;
-  isActive?: boolean;
 }
 
 function NavLink({ children, ...args }: NavLinkProps) {
