@@ -10,6 +10,7 @@ import { BsCalendarDateFill } from "react-icons/bs";
 import { FaUser } from "react-icons/fa";
 
 import { Article, PostInfo, Header, Content } from "./slug.styles";
+import NextPreviousPosts from "@components/NextPreviousPosts";
 
 type Props = {
   post: {
@@ -57,6 +58,7 @@ const Post: NextPage<Props> = ({ post }) => {
             <PrismicRichText field={post.content} />
           </Content>
         </Article>
+        <NextPreviousPosts />
         <Comments />
       </Wrapper>
     </>
