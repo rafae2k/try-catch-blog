@@ -66,6 +66,7 @@ export const Content = styled.div`
     font-size: 1.6rem;
     line-height: 2.5rem;
     color: ${({ theme }) => theme.colors.body};
+    overflow-wrap: break-word;
   }
 
   ul {
