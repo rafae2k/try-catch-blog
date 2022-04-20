@@ -1,13 +1,36 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import Link from "next/link";
 import SignInButton from "@components/SignInButton";
 import Toggle from "@components/Header/Toggle";
 import NavLink from "@components/Header/NavLink";
 import { Container, Logo, HamburgerMenu, Nav, NavMenu } from "./styles";
-import Link from "next/link";
 
 export const Header = () => {
+  const [show, setShow] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const controlNavbar = () => {
+    if (typeof window !== "undefined") {
+      if (window.scrollY > lastScrollY) {
+        setShow(true);
+      } else {
+        setShow(false);
+      }
+      setLastScrollY(window.scrollY);
+    }
+  };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", controlNavbar);
+      return () => {
+        window.removeEventListener("scroll", controlNavbar);
+      };
+    }
+  }, [lastScrollY]);
+
   return (
-    <Container>
+    <Container navUp={show}>
       <Nav>
         <Link href="/">
           <Logo src="/images/logo.svg" alt="Try...catch logo" />
