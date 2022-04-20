@@ -8,7 +8,12 @@ import { ThemeProvider } from "styled-components";
 import { dark } from "./dark";
 import { light } from "./light";
 
-export const ThemeContext = React.createContext({
+type useThemeProps = {
+  theme: string;
+  toggle: () => void;
+};
+
+export const ThemeContext = React.createContext<useThemeProps>({
   theme: "dark",
   toggle: () => undefined,
 });
@@ -35,7 +40,7 @@ export const StyledThemeProvider: React.FC<StyledThemeProviderProps> = ({
   const toggle = () => {
     setTheme((theme) => (theme === "light" ? "dark" : "light"));
   };
-  const values = React.useMemo(
+  const values = React.useMemo<useThemeProps>(
     () => ({
       theme,
       toggle,
