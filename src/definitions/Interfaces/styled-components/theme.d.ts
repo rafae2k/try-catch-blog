@@ -37,7 +37,7 @@ declare module "styled-components" {
   }
 
   export interface DefaultTheme extends BaseTheme {
-    title: string;
+    title: "dark" | "light";
     colors: {
       neutral: NeutralColors;
       background: string;
