@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import NavLink from "../NavLink";
-import { NavLinkProps } from "./styles";
+import { NavLinkProps } from "@components/Header/NavLink";
 
 export default {
   title: "Components/NavLink",
@@ -16,3 +16,7 @@ const Template = (args: NavLinkProps) => (
 );
 
 export const Default: ComponentStory<typeof NavLink> = Template.bind({});
+
+Default.args = {
+  href: "/",
+};
