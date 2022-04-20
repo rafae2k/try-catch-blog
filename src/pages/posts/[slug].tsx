@@ -10,7 +10,7 @@ import { BsCalendarDateFill } from "react-icons/bs";
 import { FaUser } from "react-icons/fa";
 
 import NextPreviousPosts from "@components/NextPreviousPosts";
-import { Article, PostInfo, Header, Content } from "./slug.styles";
+import { Article, PostInfo, Header, Content } from "../../styles/pages/posts/slug.styles";
 
 type Props = {
   post: {
