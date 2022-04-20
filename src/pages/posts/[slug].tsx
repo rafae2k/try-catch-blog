@@ -5,6 +5,7 @@ import { PrismicRichText } from "@prismicio/react";
 import * as prismicT from "@prismicio/types";
 import { createClient } from "@services/prismic";
 import Wrapper from "@components/Wrapper";
+import Comments from "@components/Comments";
 import { BsCalendarDateFill } from "react-icons/bs";
 import { FaUser } from "react-icons/fa";
 
@@ -56,6 +57,7 @@ const Post: NextPage<Props> = ({ post }) => {
             <PrismicRichText field={post.content} />
           </Content>
         </Article>
+        <Comments />
       </Wrapper>
     </>
   );
