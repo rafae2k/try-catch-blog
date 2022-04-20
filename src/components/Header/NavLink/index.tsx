@@ -4,7 +4,7 @@ import { ReactNode } from "react";
 
 import { Container } from "./styles";
 
-interface NavLinkProps extends LinkProps {
+export interface NavLinkProps extends LinkProps {
   children: ReactNode;
   isActive?: boolean;
 }
