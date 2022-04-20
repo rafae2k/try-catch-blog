@@ -17,7 +17,6 @@
     "@prismicio/client": "^6.4.3",
     "@prismicio/helpers": "^2.3.0",
     "@prismicio/react": "^2.3.0",
-    "@prismicio/slice-simulator-react": "^0.2.2",
     "next": "12.1.4",
     "nextjs-progressbar": "^0.0.14",
     "react": "18.0.0",
@@ -29,6 +28,7 @@
   "devDependencies": {
     "@babel/core": "^7.17.9",
     "@babel/preset-env": "^7.16.11",
+    "@prismicio/slice-simulator-react": "^0.2.2",
     "@storybook/addon-actions": "^6.4.21",
     "@storybook/addon-docs": "^6.4.21",
     "@storybook/addon-essentials": "^6.4.21",
