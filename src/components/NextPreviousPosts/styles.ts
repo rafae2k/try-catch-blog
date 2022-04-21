@@ -8,6 +8,7 @@ export const Container = styled.div`
   gap: 2rem;
 
   div {
+    cursor: pointer;
     width: clamp(20rem, 20rem, 70rem);
     font-size: 2rem;
     transition: all 1s ease-in;
