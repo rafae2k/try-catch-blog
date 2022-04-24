@@ -42,9 +42,6 @@ export function Header() {
           <NavLink href="/" passHref>
             <a>Home</a>
           </NavLink>
-          <NavLink href="/posts">
-            <a>Posts</a>
-          </NavLink>
           <div>
             <SignInButton />
             <Toggle />
