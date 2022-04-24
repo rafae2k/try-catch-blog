@@ -6,7 +6,7 @@ export const Container = styled.button`
   gap: 1.6rem;
 
   height: 3rem;
-  max-width: 20rem;
+  max-width: 25rem;
   padding: 2rem 1.5rem;
 
   border-radius: 3rem;
@@ -19,6 +19,7 @@ export const Container = styled.button`
   p {
     color: white;
     font-size: 1.6rem;
+    max-width: 20rem;
     text-overflow: ellipsis;
   }
 
