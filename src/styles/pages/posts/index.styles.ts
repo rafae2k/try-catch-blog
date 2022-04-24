@@ -19,7 +19,6 @@ export const Article = styled.article`
   h1 {
     font-size: 2.8rem;
     font-weight: bold;
-    color: ${({ theme }) => theme.colors.primary[50]};
     cursor: pointer;
     transition: color 0.2s ease-in-out;
   }

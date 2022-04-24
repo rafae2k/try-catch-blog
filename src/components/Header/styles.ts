@@ -41,7 +41,7 @@ export const NavMenu = styled.nav`
   margin-left: 5rem;
   width: 100%;
 
-  div:nth-child(3) {
+  div:nth-child(2) {
     display: flex;
     align-items: center;
     margin-left: auto;
