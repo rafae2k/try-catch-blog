@@ -5,6 +5,9 @@ export const Article = styled.article`
   flex-direction: column;
   gap: 2rem;
   margin-bottom: 3rem;
+  padding: 2rem;
+
+  transition: all 0.2s ease;
 
   > p {
     cursor: pointer;
@@ -14,6 +17,13 @@ export const Article = styled.article`
     h1 {
       color: ${({ theme }) => theme.colors.primary[50]};
     }
+
+    background-color: ${({ theme }) =>
+      theme.title === "dark"
+        ? theme.colors.neutral[90]
+        : theme.colors.neutral[10]};
+    border-radius: 2rem;
+    transform: scale(1.01);
   }
 
   h1 {
