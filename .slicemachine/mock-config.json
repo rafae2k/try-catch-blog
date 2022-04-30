@@ -1,12 +1,6 @@
 {
   "_cts": {
     "blog-post": {
-      "content": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
-      },
       "title": {
         "config": {
           "patternType": "HEADING",
@@ -25,20 +19,13 @@
   "slices": {
     "Post": {
       "default": {
-        "primary": {
-          "content": {
-            "config": {
-              "patternType": "STORY",
-              "blocks": 5
-            }
-          },
-          "title": {
-            "config": {
-              "patternType": "HEADING",
-              "blocks": 1
-            }
-          }
-        }
+        "primary": {},
+        "items": {}
+      }
+    },
+    "Embed": {
+      "default": {
+        "primary": {}
       }
     }
   }
