@@ -19,6 +19,14 @@
           "placeholder": "Your name"
         }
       },
+      "authorLink": {
+        "type": "Link",
+        "config": {
+          "label": "Author Link",
+          "placeholder": "",
+          "select": null
+        }
+      },
       "thumbnail": {
         "type": "Image",
         "config": {

@@ -1,7 +1,7 @@
 import React from 'react'
 import { PrismicRichText } from '@prismicio/react'
 
-const Post = ({ slice }) => (
+const Paragraph = ({ slice }) => (
   <section>
     <span className="title">
       {
@@ -28,4 +28,4 @@ const Post = ({ slice }) => (
   </section>
 )
 
-export default Post
+export default Paragraph

@@ -1,0 +1,24 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "paragraph",
+    "items": [],
+    "primary": {
+      "title": [
+        {
+          "type": "heading2",
+          "text": "Reintermediate value-added supply-chains",
+          "spans": []
+        }
+      ],
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Magna ea consectetur dolor in minim eu ullamco culpa veniam quis.",
+          "spans": []
+        }
+      ]
+    }
+  }
+]

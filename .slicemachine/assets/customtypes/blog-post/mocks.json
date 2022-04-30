@@ -1,9 +1,13 @@
 {
-  "id": "ae9afe1f-b179-4505-ae64-2da248e872a2",
-  "uid": "earum-ab-in",
+  "id": "489d8097-c3a4-4832-878f-ef28075fbfe1",
+  "uid": "odit-velit-eum",
   "type": "blog-post",
   "data": {
-    "author": "mesh clicks-and-mortar models",
+    "author": "disintermediate web-enabled synergies",
+    "authorLink": {
+      "link_type": "Web",
+      "url": "https://slicemachine.dev"
+    },
     "thumbnail": {
       "dimensions": {
         "width": 900,
@@ -11,19 +15,19 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb?w=900&h=500&fit=crop"
     },
     "title": [
       {
         "type": "heading1",
-        "text": "Transform bleeding-edge interfaces",
+        "text": "Strategize B2B applications",
         "spans": []
       }
     ],
     "description": [
       {
         "type": "paragraph",
-        "text": "Incididunt incididunt consequat anim esse cillum et. Velit adipisicing aliquip ex voluptate minim est laborum esse. Pariatur anim veniam sunt culpa ea et laborum do.",
+        "text": "Minim ullamco do culpa culpa do cillum labore ut ullamco. Aliquip ad irure excepteur excepteur.",
         "spans": []
       }
     ]
