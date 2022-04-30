@@ -30,7 +30,7 @@ function NextPreviousPosts() {
         <Link href={`/posts/${posts[postIndex - 1].uid}`} passHref>
           <div>
             <h3>Post Anterior</h3>
-            <p>{posts[postIndex - 1].data.slices[0].primary.title[0].text}</p>
+            <p>{posts[postIndex - 1].data.title[0].text}</p>
           </div>
         </Link>
       )}
@@ -38,7 +38,7 @@ function NextPreviousPosts() {
         <Link href={`/posts/${posts[postIndex + 1].uid}`} passHref>
           <div>
             <h3>Próximo post</h3>
-            <p>{posts[postIndex + 1].data.slices[0].primary.title[0].text}</p>
+            <p>{posts[postIndex + 1].data.title[0].text}</p>
           </div>
         </Link>
       )}
