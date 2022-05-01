@@ -1,0 +1,23 @@
+{
+  "id": "2eed8dc1-49de-4d3c-a61f-c465d077bede",
+  "uid": "culpa-corporis-aut",
+  "type": "post",
+  "data": {
+    "author": "synergize robust applications",
+    "authorLink": {
+      "link_type": "media",
+      "url": "https://source.unsplash.com/daily"
+    },
+    "thumbnail": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=900&h=500&fit=crop"
+    },
+    "title": "visualize out-of-the-box experiences",
+    "description": "harness seamless supply-chains"
+  }
+}

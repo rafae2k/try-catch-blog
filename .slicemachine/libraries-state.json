@@ -1,6 +1,119 @@
 {
   "slices": {
     "components": {
+      "code_snippet": {
+        "library": "slices",
+        "id": "code_snippet",
+        "name": "CodeSnippet",
+        "description": "CodeSnippet",
+        "model": {
+          "id": "code_snippet",
+          "type": "SharedSlice",
+          "name": "CodeSnippet",
+          "description": "CodeSnippet",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "CodeSnippet",
+              "primary": {
+                "codeSnippet": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Code Snippet",
+                    "placeholder": "A nice description of your feature",
+                    "allowTargetBlank": false,
+                    "single": "preformatted"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "code_snippet",
+            "items": [],
+            "primary": {
+              "codeSnippet": [
+                {
+                  "type": "paragraph",
+                  "text": "Proident et deserunt aute dolor ullamco aute in.",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
+      "image": {
+        "library": "slices",
+        "id": "image",
+        "name": "Image",
+        "description": "Image",
+        "model": {
+          "id": "image",
+          "type": "SharedSlice",
+          "name": "Image",
+          "description": "Image",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Image",
+              "primary": {
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "image",
+            "items": [],
+            "primary": {
+              "image": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764?w=900&h=500&fit=crop"
+              }
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
       "paragraph": {
         "library": "slices",
         "id": "paragraph",

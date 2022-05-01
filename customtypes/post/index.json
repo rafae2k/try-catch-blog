@@ -1,6 +1,6 @@
 {
-  "id": "blog-post",
-  "label": "Post",
+  "id": "post",
+  "label": "post",
   "repeatable": true,
   "status": true,
   "json": {
@@ -16,7 +16,7 @@
         "type": "Text",
         "config": {
           "label": "Author",
-          "placeholder": "Your name"
+          "placeholder": ""
         }
       },
       "authorLink": {
@@ -24,7 +24,7 @@
         "config": {
           "label": "Author Link",
           "placeholder": "",
-          "select": null
+          "select": "media"
         }
       },
       "thumbnail": {
@@ -36,21 +36,17 @@
         }
       },
       "title": {
-        "type": "StructuredText",
+        "type": "Text",
         "config": {
           "label": "Title",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "heading1"
+          "placeholder": ""
         }
       },
       "description": {
-        "type": "StructuredText",
+        "type": "Text",
         "config": {
           "label": "Description",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "paragraph"
+          "placeholder": ""
         }
       },
       "slices": {
@@ -58,7 +54,13 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "post": {
+            "code_snippet": {
+              "type": "SharedSlice"
+            },
+            "image": {
+              "type": "SharedSlice"
+            },
+            "paragraph": {
               "type": "SharedSlice"
             }
           }
