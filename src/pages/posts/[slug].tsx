@@ -4,7 +4,7 @@ import Image from "next/image";
 import { GetStaticPaths, NextPage } from "next";
 import * as prismicT from "@prismicio/types";
 import { createClient } from "@services/prismic";
-import { PrismicRichText, SliceZone } from "@prismicio/react";
+import { SliceZone } from "@prismicio/react";
 
 import Wrapper from "@components/Wrapper";
 import PostInfo from "@components/PostInfo";
@@ -12,8 +12,9 @@ import NextPreviousPosts from "@components/NextPreviousPosts";
 import Comments from "@components/Comments";
 
 import { Article, Header, Content } from "../../styles/pages/posts/slug.styles";
-import TextSlice from "@components/TextSlice";
-import Script from 'next/script';
+import TextSlice from "@components/Slices/TextSlice";
+import CodeSnippet from "@components/Slices/CodeSnippet";
+import ImageSlice from "@components/Slices/ImageSlice";
 
 type Props = {
   post: {
@@ -31,11 +32,13 @@ type Props = {
 };
 
 const Post: NextPage<Props> = ({ post }) => {
-  console.log(post);
-
   const components = {
-    post: TextSlice,
+    paragraph: TextSlice,
+    code_snippet: CodeSnippet,
+    image: ImageSlice,
   };
+
+  console.log(post);
 
   return (
     <>
@@ -85,18 +88,18 @@ type Params = {
 export const getStaticProps = async ({ params }: Params) => {
   const { slug, locale } = params;
   const client = createClient();
-  const post = await client.getByUID("blog-post", slug, { lang: locale });
+  const post = await client.getByUID("post", slug, { lang: locale });
 
   return {
     props: {
       post: {
         uid: post.uid,
-        title: post.data.title[0].text,
+        title: post.data.title,
         thumbnail: post.data.thumbnail,
         content: post.data.slices,
         datePublished: post.first_publication_date,
         author: post.data.author,
-        authorLink: post.data.authorLink.url,
+        authorLink: post.data.authorLink.url || "",
       },
     },
   };
