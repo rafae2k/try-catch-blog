@@ -70,6 +70,18 @@
       "default": {
         "primary": {}
       }
+    },
+    "Warning": {
+      "default": {
+        "primary": {
+          "warning": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
     }
   }
 }
