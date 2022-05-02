@@ -4,7 +4,7 @@ import Image from "next/image";
 import { GetStaticPaths, NextPage } from "next";
 import * as prismicT from "@prismicio/types";
 import { createClient } from "@services/prismic";
-import { SliceZone } from "@prismicio/react";
+import { SliceZone, SliceZoneComponents } from "@prismicio/react";
 
 import Wrapper from "@components/Wrapper";
 import PostInfo from "@components/PostInfo";
@@ -15,6 +15,7 @@ import { Article, Header, Content } from "../../styles/pages/posts/slug.styles";
 import TextSlice from "@components/Slices/TextSlice";
 import CodeSnippet from "@components/Slices/CodeSnippet";
 import ImageSlice from "@components/Slices/ImageSlice";
+import { SlicesProps } from "@definitions/Interfaces/prismic/slices";
 
 type Props = {
   post: {
@@ -32,13 +33,11 @@ type Props = {
 };
 
 const Post: NextPage<Props> = ({ post }) => {
-  const components = {
+  const components: SliceZoneComponents<SlicesProps> = {
     paragraph: TextSlice,
     code_snippet: CodeSnippet,
     image: ImageSlice,
   };
-
-  console.log(post);
 
   return (
     <>
@@ -62,7 +61,7 @@ const Post: NextPage<Props> = ({ post }) => {
             />
           </Header>
           <Content>
-            {/* <PrismicRichText field={post.content} /> */}
+            {/* @ts-ignore */}
             <SliceZone components={components} slices={post.content} />
           </Content>
         </Article>
