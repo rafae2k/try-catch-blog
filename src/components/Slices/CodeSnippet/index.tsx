@@ -1,25 +1,27 @@
-import { CopyBlock, dracula } from "react-code-blocks";
+import { CopyBlock, dracula, atomOneLight } from "react-code-blocks";
 import { Container } from "./styles";
+import * as prismicT from "@prismicio/types";
+import { SliceComponentProps } from "@prismicio/react";
+import * as prismicH from "@prismicio/helpers";
+import { useTheme } from "@styles/theme";
 
-interface CodeSnippetProps {
-  slice: {
-    primary: {
-      codeSnippet: [
-        {
-          text: string;
-        }
-      ];
-    };
-  };
-}
+export type CodeSnippetProps = prismicT.Slice<
+  "code_snippet",
+  {
+    codeSnippet: prismicT.RichTextField;
+  }
+>;
 
-function CodeSnippet({ slice }: CodeSnippetProps) {
+function CodeSnippet({ slice }: SliceComponentProps<CodeSnippetProps>) {
+  const { theme } = useTheme();
+
+  const code = prismicH.asText(slice.primary.codeSnippet);
   return (
     <Container>
       <CopyBlock
-        text={slice.primary.codeSnippet[0].text}
+        text={code}
         language={"jsx"}
-        theme={dracula}
+        theme={theme.title === "dark" ? dracula : atomOneLight}
         showLineNumbers
         wrapLines
       />

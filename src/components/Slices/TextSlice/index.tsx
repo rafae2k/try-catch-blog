@@ -1,12 +1,19 @@
 import { PrismicRichText } from "@prismicio/react";
+import * as prismicT from "@prismicio/types";
+import { SliceComponentProps } from "@prismicio/react";
 
 import { Container } from "./styles";
 
-interface TextSliceProps {
-  // slice: SliceZone<string, AnyRegularField>;
-}
+export type TextSliceProps = prismicT.Slice<
+  "paragraph",
+  {
+    heading: prismicT.KeyTextField;
+    title: prismicT.RichTextField;
+    content: prismicT.RichTextField;
+  }
+>;
 
-function TextSlice({ slice }: TextSliceProps) {
+function TextSlice({ slice }: SliceComponentProps<TextSliceProps>) {
   return (
     <Container>
       <PrismicRichText field={slice.primary.title} />
