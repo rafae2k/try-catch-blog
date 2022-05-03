@@ -1,6 +1,16 @@
 {
-  "id": "536711d0-c252-42a5-b8fc-886a6d24d8c1",
-  "uid": "omnis-veniam-vero",
+  "id": "7cc0fe26-2e53-4961-950d-a36c2025e73f",
+  "uid": "quas-fugiat-aut",
   "type": "post-custom",
-  "data": {}
+  "data": {
+    "thumbnail": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=900&h=500&fit=crop"
+    }
+  }
 }

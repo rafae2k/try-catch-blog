@@ -1,9 +1,13 @@
 {
-  "id": "c669a90a-6a77-4999-87c3-f13b1e6ab406",
-  "uid": "temporibus-eum-quis",
+  "id": "489d8097-c3a4-4832-878f-ef28075fbfe1",
+  "uid": "odit-velit-eum",
   "type": "blog-post",
   "data": {
-    "author": "utilize impactful systems",
+    "author": "disintermediate web-enabled synergies",
+    "authorLink": {
+      "link_type": "Web",
+      "url": "https://slicemachine.dev"
+    },
     "thumbnail": {
       "dimensions": {
         "width": 900,
@@ -11,26 +15,19 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb?w=900&h=500&fit=crop"
     },
     "title": [
       {
         "type": "heading1",
-        "text": "Leverage proactive channels",
+        "text": "Strategize B2B applications",
         "spans": []
       }
     ],
     "description": [
       {
         "type": "paragraph",
-        "text": "Cupidatat officia incididunt ex dolor et et adipisicing dolor elit ipsum fugiat mollit et ex eu. Ex laborum adipisicing veniam ut. Adipisicing cillum elit magna eiusmod proident voluptate magna consequat mollit cillum minim tempor in eu est.",
-        "spans": []
-      }
-    ],
-    "content": [
-      {
-        "type": "paragraph",
-        "text": "Ad ipsum magna cillum aliqua. Velit sunt irure cupidatat cillum occaecat officia aliqua enim. Anim deserunt anim sint exercitation nostrud sunt consequat laboris sunt.",
+        "text": "Minim ullamco do culpa culpa do cillum labore ut ullamco. Aliquip ad irure excepteur excepteur.",
         "spans": []
       }
     ]

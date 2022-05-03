@@ -1,0 +1,28 @@
+{
+  "id": "code_snippet",
+  "type": "SharedSlice",
+  "name": "CodeSnippet",
+  "description": "CodeSnippet",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "CodeSnippet",
+      "primary": {
+        "codeSnippet": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Code Snippet",
+            "placeholder": "A nice description of your feature",
+            "allowTargetBlank": false,
+            "single": "preformatted"
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

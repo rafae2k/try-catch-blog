@@ -25,30 +25,6 @@ export const Article = styled.article`
   }
 `;
 
-export const PostInfo = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-
-  div {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: ${({ theme }) => theme.colors.neutral[50]};
-
-    p,
-    time {
-      color: ${({ theme }) => theme.colors.neutral[50]};
-      font-size: 1.4rem;
-    }
-
-    svg {
-      height: 1.6rem;
-      width: auto;
-    }
-  }
-`;
-
 export const Header = styled.header`
   display: flex;
   flex-direction: column;
@@ -59,19 +35,6 @@ export const Header = styled.header`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
   padding-bottom: 4rem;
-
-  p {
-    font-size: 1.6rem;
-    line-height: 2.5rem;
-    color: ${({ theme }) => theme.colors.body};
-    overflow-wrap: break-word;
-  }
-
-  ul {
-    li {
-      padding-bottom: 1rem;
-    }
-  }
 `;

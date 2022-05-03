@@ -1,0 +1,17 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "code_snippet",
+    "items": [],
+    "primary": {
+      "codeSnippet": [
+        {
+          "type": "paragraph",
+          "text": "Proident et deserunt aute dolor ullamco aute in.",
+          "spans": []
+        }
+      ]
+    }
+  }
+]

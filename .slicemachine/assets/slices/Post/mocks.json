@@ -3,89 +3,35 @@
     "variation": "default",
     "name": "Default",
     "slice_type": "post",
-    "items": [],
-    "primary": {
-      "title": [
-        {
-          "type": "heading1",
-          "text": "Revolutionize web-enabled methodologies",
-          "spans": []
-        }
-      ],
-      "description": [
-        {
-          "type": "paragraph",
-          "text": "Enim nisi dolor amet duis excepteur.",
-          "spans": []
-        }
-      ],
-      "content": [
-        {
-          "type": "heading1",
-          "text": "Architect out-of-the-box e-tailers",
-          "spans": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Cillum est do cillum mollit labore voluptate duis.",
-          "spans": []
-        },
-        {
-          "type": "heading1",
-          "text": "Morph holistic applications",
-          "spans": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Commodo enim excepteur ullamco. Labore ut amet dolore incididunt culpa do ad occaecat Lorem eiusmod ipsum duis culpa Lorem.",
-          "spans": []
-        },
-        {
-          "type": "heading1",
-          "text": "Redefine global synergies",
-          "spans": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Esse velit ullamco incididunt adipisicing eu id. Aliquip nostrud laborum ea ex sit irure excepteur irure nostrud et non in occaecat.",
-          "spans": []
-        },
-        {
-          "type": "heading1",
-          "text": "Exploit proactive infomediaries",
-          "spans": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Reprehenderit eu esse adipisicing ad tempor mollit dolore reprehenderit commodo do. Cillum ex dolore id aute velit nulla consectetur minim do in. Lorem nisi est qui laboris cupidatat et commodo laboris aute eiusmod et aliquip id est.",
-          "spans": []
-        },
-        {
-          "type": "heading1",
-          "text": "Architect visionary convergence",
-          "spans": []
-        },
-        {
-          "type": "paragraph",
-          "text": "Ex deserunt deserunt non. Quis incididunt irure mollit laborum aute et ad enim esse ullamco.",
-          "spans": []
-        }
-      ],
-      "embed": {
-        "title": "Introducing Slice Machine",
-        "author_name": "Prismic",
-        "author_url": "https://www.youtube.com/channel/UCJq6AEgtWeZt7ziQ-fLKOeA",
-        "type": "video",
-        "height": 113,
-        "width": 200,
-        "version": "1.0",
-        "provider_name": "YouTube",
-        "provider_url": "https://www.youtube.com/",
-        "thumbnail_height": 360,
-        "thumbnail_width": 480,
-        "thumbnail_url": "https://i.ytimg.com/vi/iewZXv94XGY/hqdefault.jpg",
-        "html": "<iframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/iewZXv94XGY?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+    "items": [
+      {
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Ullamco eiusmod ea exercitation in nisi. Voluptate occaecat mollit est aliqua officia aute aliquip esse consectetur et.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Eiusmod laborum ipsum velit esse id excepteur aute cillum occaecat. Culpa in dolor et ullamco non aliqua excepteur est aute commodo deserunt occaecat sint cupidatat veniam. Nisi reprehenderit velit qui consequat laborum cupidatat in officia incididunt anim ea incididunt.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Ex qui nostrud incididunt pariatur ex ea veniam ea quis nulla labore esse duis. Proident sunt eu laboris sunt ea mollit enim incididunt consectetur non cillum officia cupidatat ex cupidatat.",
+            "spans": []
+          }
+        ]
       }
-    }
+    ],
+    "primary": {}
   }
 ]

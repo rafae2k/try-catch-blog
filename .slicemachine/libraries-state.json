@@ -1,55 +1,31 @@
 {
   "slices": {
     "components": {
-      "post": {
+      "code_snippet": {
         "library": "slices",
-        "id": "post",
-        "name": "Post",
-        "description": "Post",
+        "id": "code_snippet",
+        "name": "CodeSnippet",
+        "description": "CodeSnippet",
         "model": {
-          "id": "post",
+          "id": "code_snippet",
           "type": "SharedSlice",
-          "name": "Post",
-          "description": "Post",
+          "name": "CodeSnippet",
+          "description": "CodeSnippet",
           "variations": [
             {
               "id": "default",
               "name": "Default",
               "docURL": "...",
               "version": "sktwi1xtmkfgx8626",
-              "description": "Post",
+              "description": "CodeSnippet",
               "primary": {
-                "title": {
+                "codeSnippet": {
                   "type": "StructuredText",
                   "config": {
-                    "label": "Title",
-                    "placeholder": "",
-                    "allowTargetBlank": true,
-                    "single": "heading1"
-                  }
-                },
-                "description": {
-                  "type": "StructuredText",
-                  "config": {
-                    "single": "paragraph",
-                    "label": "Description",
-                    "placeholder": "A nice description of your feature"
-                  }
-                },
-                "content": {
-                  "type": "StructuredText",
-                  "config": {
-                    "label": "Content",
-                    "placeholder": "",
-                    "allowTargetBlank": true,
-                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-                  }
-                },
-                "embed": {
-                  "type": "Embed",
-                  "config": {
-                    "label": "Embed",
-                    "placeholder": ""
+                    "label": "Code Snippet",
+                    "placeholder": "A nice description of your feature",
+                    "allowTargetBlank": false,
+                    "single": "preformatted"
                   }
                 }
               },
@@ -62,89 +38,72 @@
           "default": {
             "variation": "default",
             "name": "Default",
-            "slice_type": "post",
+            "slice_type": "code_snippet",
             "items": [],
             "primary": {
-              "title": [
+              "codeSnippet": [
                 {
-                  "type": "heading1",
-                  "text": "Revolutionize web-enabled methodologies",
+                  "type": "paragraph",
+                  "text": "Proident et deserunt aute dolor ullamco aute in.",
                   "spans": []
                 }
-              ],
-              "description": [
-                {
-                  "type": "paragraph",
-                  "text": "Enim nisi dolor amet duis excepteur.",
-                  "spans": []
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
+      "image": {
+        "library": "slices",
+        "id": "image",
+        "name": "Image",
+        "description": "Image",
+        "model": {
+          "id": "image",
+          "type": "SharedSlice",
+          "name": "Image",
+          "description": "Image",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Image",
+              "primary": {
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
                 }
-              ],
-              "content": [
-                {
-                  "type": "heading1",
-                  "text": "Architect out-of-the-box e-tailers",
-                  "spans": []
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "image",
+            "items": [],
+            "primary": {
+              "image": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
                 },
-                {
-                  "type": "paragraph",
-                  "text": "Cillum est do cillum mollit labore voluptate duis.",
-                  "spans": []
-                },
-                {
-                  "type": "heading1",
-                  "text": "Morph holistic applications",
-                  "spans": []
-                },
-                {
-                  "type": "paragraph",
-                  "text": "Commodo enim excepteur ullamco. Labore ut amet dolore incididunt culpa do ad occaecat Lorem eiusmod ipsum duis culpa Lorem.",
-                  "spans": []
-                },
-                {
-                  "type": "heading1",
-                  "text": "Redefine global synergies",
-                  "spans": []
-                },
-                {
-                  "type": "paragraph",
-                  "text": "Esse velit ullamco incididunt adipisicing eu id. Aliquip nostrud laborum ea ex sit irure excepteur irure nostrud et non in occaecat.",
-                  "spans": []
-                },
-                {
-                  "type": "heading1",
-                  "text": "Exploit proactive infomediaries",
-                  "spans": []
-                },
-                {
-                  "type": "paragraph",
-                  "text": "Reprehenderit eu esse adipisicing ad tempor mollit dolore reprehenderit commodo do. Cillum ex dolore id aute velit nulla consectetur minim do in. Lorem nisi est qui laboris cupidatat et commodo laboris aute eiusmod et aliquip id est.",
-                  "spans": []
-                },
-                {
-                  "type": "heading1",
-                  "text": "Architect visionary convergence",
-                  "spans": []
-                },
-                {
-                  "type": "paragraph",
-                  "text": "Ex deserunt deserunt non. Quis incididunt irure mollit laborum aute et ad enim esse ullamco.",
-                  "spans": []
-                }
-              ],
-              "embed": {
-                "title": "Introducing Slice Machine",
-                "author_name": "Prismic",
-                "author_url": "https://www.youtube.com/channel/UCJq6AEgtWeZt7ziQ-fLKOeA",
-                "type": "video",
-                "height": 113,
-                "width": 200,
-                "version": "1.0",
-                "provider_name": "YouTube",
-                "provider_url": "https://www.youtube.com/",
-                "thumbnail_height": 360,
-                "thumbnail_width": 480,
-                "thumbnail_url": "https://i.ytimg.com/vi/iewZXv94XGY/hqdefault.jpg",
-                "html": "<iframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/iewZXv94XGY?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764?w=900&h=500&fit=crop"
               }
             }
           }
@@ -153,13 +112,79 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {
+        "screenshotPaths": {}
+      },
+      "paragraph": {
+        "library": "slices",
+        "id": "paragraph",
+        "name": "Paragraph",
+        "description": "Paragraph",
+        "model": {
+          "id": "paragraph",
+          "type": "SharedSlice",
+          "name": "Paragraph",
+          "description": "Paragraph",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Paragraph",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "heading2,heading3,heading4,heading5,heading6,em,strong"
+                  }
+                },
+                "content": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "content",
+                    "placeholder": "A nice description of your feature",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,list-item,o-list-item,rtl,embed"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
           "default": {
-            "path": "/Users/rafo/code/repositories/try-catch-blog/.slicemachine/assets/slices/Post/default/preview.png",
-            "width": 800,
-            "height": 29
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "paragraph",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading2",
+                  "text": "Reintermediate value-added supply-chains",
+                  "spans": []
+                }
+              ],
+              "content": [
+                {
+                  "type": "paragraph",
+                  "text": "Magna ea consectetur dolor in minim eu ullamco culpa veniam quis.",
+                  "spans": []
+                }
+              ]
+            }
           }
-        }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
       }
     }
   }
