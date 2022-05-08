@@ -12,12 +12,13 @@ export const Container = styled.div`
     overflow-wrap: break-word;
   }
 
-  ol,
+  ul {
+    list-style-type: disc;
+  }
+
   li {
-    li {
-      margin-left: 4rem;
-      padding-bottom: 1rem;
-    }
+    margin-left: 4rem;
+    padding-bottom: 1rem;
   }
 `;
 export const Header = styled.div``;
