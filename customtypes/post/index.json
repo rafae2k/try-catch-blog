@@ -62,6 +62,9 @@
             },
             "paragraph": {
               "type": "SharedSlice"
+            },
+            "warning": {
+              "type": "SharedSlice"
             }
           }
         }
