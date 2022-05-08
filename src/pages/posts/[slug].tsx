@@ -72,20 +72,28 @@ const Post: NextPage<Props> = ({ post }) => {
   );
 };
 
-export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => ({
-  paths: [], // indicates that no page needs be created at build time
-  fallback: "blocking", // indicates the type of fallback
-});
+export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
+  const client = createClient();
+  const posts = await client.getAllByType("post", { lang: "*" });
+
+  return {
+    paths: posts.map((post) => {
+      return { params: { slug: post.uid as string }, locale: post.lang };
+    }),
+    fallback: false,
+  };
+};
 
 type Params = {
   params: {
     slug: string;
-    locale: string;
   };
+  locale: string;
 };
 
-export const getStaticProps = async ({ params }: Params) => {
-  const { slug, locale } = params;
+export const getStaticProps = async ({ params, locale }: Params) => {
+  const { slug } = params;
+
   const client = createClient();
   const post = await client.getByUID("post", slug, { lang: locale });
 
