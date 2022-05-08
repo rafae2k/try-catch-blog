@@ -18,6 +18,7 @@
     "@prismicio/client": "^6.4.3",
     "@prismicio/helpers": "^2.3.0",
     "@prismicio/react": "^2.3.0",
+    "framer-motion": "^6.3.3",
     "next": "12.1.4",
     "next-auth": "^4.3.3",
     "nextjs-progressbar": "^0.0.14",
