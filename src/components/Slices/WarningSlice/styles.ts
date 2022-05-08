@@ -7,6 +7,12 @@ export const Container = styled.div`
   font-size: 1.6rem;
   color: ${({ theme }) => theme.colors.body};
 
+  background-color: #fffbeb;
+  border-left: 1rem solid #fbbf24;
+  padding: 2rem;
+  border-radius: 1rem;
+  color: ${({ theme }) => theme.colors.neutral[80]};
+
   p {
     line-height: 2.5rem;
     overflow-wrap: break-word;

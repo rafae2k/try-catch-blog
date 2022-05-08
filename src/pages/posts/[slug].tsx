@@ -16,6 +16,7 @@ import TextSlice from "@components/Slices/TextSlice";
 import CodeSnippet from "@components/Slices/CodeSnippet";
 import ImageSlice from "@components/Slices/ImageSlice";
 import { SlicesProps } from "@definitions/Interfaces/prismic/slices";
+import WarningSlice from "@components/Slices/WarningSlice";
 
 type Props = {
   post: {
@@ -37,6 +38,7 @@ const Post: NextPage<Props> = ({ post }) => {
     paragraph: TextSlice,
     code_snippet: CodeSnippet,
     image: ImageSlice,
+    warning: WarningSlice,
   };
 
   return (

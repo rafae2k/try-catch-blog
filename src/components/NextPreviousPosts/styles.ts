@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 4rem;
   justify-content: space-between;
   gap: 2rem;
 

@@ -2,6 +2,7 @@ import * as prismicT from "@prismicio/types";
 import { TextSliceProps } from "@components/Slices/TextSlice";
 import { ImageSliceProps } from "@components/Slices/ImageSlice";
 import { CodeSnippetProps } from "@components/Slices/CodeSnippet";
+import { WarningSliceProps } from "@components/Slices/WarningSlice";
 
 type Slices = {
   primary: {
@@ -27,4 +28,8 @@ export type Post = {
   data: PostData;
 };
 
-export type SlicesProps = TextSliceProps | ImageSliceProps | CodeSnippetProps;
+export type SlicesProps =
+  | TextSliceProps
+  | ImageSliceProps
+  | CodeSnippetProps
+  | WarningSliceProps;

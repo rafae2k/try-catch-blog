@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
 
   html {
     font-size: 62.5%;
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
     min-height: 100vh;
     background-color: ${({ theme }) => theme.colors.background};
     color: ${({ theme }) => theme.colors.heading};
