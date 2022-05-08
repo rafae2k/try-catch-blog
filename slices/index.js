@@ -3,15 +3,18 @@
 import CodeSnippet from './CodeSnippet';
 import Image from './Image';
 import Paragraph from './Paragraph';
+import Warning from './Warning';
 
 export {
 	CodeSnippet,
 	Image,
 	Paragraph,
+	Warning,
 };
 
 export const components = {
 	code_snippet: CodeSnippet,
 	image: Image,
 	paragraph: Paragraph,
+	warning: Warning,
 };

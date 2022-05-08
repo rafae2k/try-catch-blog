@@ -1,0 +1,17 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "warning",
+    "items": [],
+    "primary": {
+      "warning": [
+        {
+          "type": "paragraph",
+          "text": "Irure sit anim fugiat voluptate voluptate exercitation eiusmod.",
+          "spans": []
+        }
+      ]
+    }
+  }
+]
