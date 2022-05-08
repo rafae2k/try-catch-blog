@@ -39,11 +39,11 @@ const Posts: NextPage<PostsProps> = ({ posts }) => {
   );
 };
 
-type GetStaticProps = {
+type GetServerSideProps = {
   locale: string;
 };
 
-export async function getStaticProps({ locale }: GetStaticProps) {
+export async function getServerSideProps({ locale }: GetServerSideProps) {
   const client = createClient();
 
   const { results: posts } = await client.get({ lang: locale });
