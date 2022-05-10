@@ -16,7 +16,7 @@
     </br>
 
   <p align="center">
-    Try catch born as personal tutorials blog were i share my knowledge and tips about frontend development
+    Try catch was born as a personal blog where I share my knowledge and tips on frontend development
     <br />
     <br />
     <a href="http://try-catch-blog.vercel.app/">View Live</a>
@@ -55,6 +55,10 @@
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
+
+In a eager to sharing knowledge and learn in public, i have an idea to build my own blog page, to put togheter in one place everything that i know, share my experiences and mistakes.
+
+Was also a amazing oportunity to lear Next.js, Typescript, how to work with a Headless CMS, Authentication and internationalization (i18y)
 
 [![Product Name Screen Shot][product-screenshot]](https://try-catch-blog.vercel.app/)
 
