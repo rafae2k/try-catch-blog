@@ -11,6 +11,13 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "CodeSnippet",
       "primary": {
+        "language": {
+          "type": "Text",
+          "config": {
+            "label": "Language",
+            "placeholder": ""
+          }
+        },
         "codeSnippet": {
           "type": "StructuredText",
           "config": {

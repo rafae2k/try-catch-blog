@@ -19,6 +19,13 @@
               "version": "sktwi1xtmkfgx8626",
               "description": "CodeSnippet",
               "primary": {
+                "language": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Language",
+                    "placeholder": ""
+                  }
+                },
                 "codeSnippet": {
                   "type": "StructuredText",
                   "config": {
@@ -41,10 +48,11 @@
             "slice_type": "code_snippet",
             "items": [],
             "primary": {
+              "language": "maximize global applications",
               "codeSnippet": [
                 {
                   "type": "paragraph",
-                  "text": "Proident et deserunt aute dolor ullamco aute in.",
+                  "text": "Lorem incididunt ea ex. Nisi reprehenderit velit ad dolore pariatur do eiusmod aute exercitation sint. Lorem ex sint do laboris fugiat non dolor qui occaecat sint quis elit.",
                   "spans": []
                 }
               ]
