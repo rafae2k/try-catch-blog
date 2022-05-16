@@ -48,9 +48,11 @@ export async function getServerSideProps({ locale }: GetServerSideProps) {
 
   const { results: posts } = await client.get({ lang: locale });
 
+  const newToOldPostsOrder = posts.slice(0).reverse();
+
   return {
     props: {
-      posts,
+      posts: newToOldPostsOrder,
     },
   };
 }

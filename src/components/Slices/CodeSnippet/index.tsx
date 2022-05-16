@@ -9,6 +9,7 @@ export type CodeSnippetProps = prismicT.Slice<
   "code_snippet",
   {
     codeSnippet: prismicT.RichTextField;
+    language: string;
   }
 >;
 
@@ -20,7 +21,7 @@ function CodeSnippet({ slice }: SliceComponentProps<CodeSnippetProps>) {
     <Container>
       <CopyBlock
         text={code}
-        language={"jsx"}
+        language={slice.primary.language}
         theme={theme.title === "dark" ? dracula : atomOneLight}
         showLineNumbers
         wrapLines

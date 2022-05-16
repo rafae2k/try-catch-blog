@@ -14,10 +14,8 @@ export type WarningSliceProps = prismicT.Slice<
 >;
 
 function WarningSlice({ slice }: SliceComponentProps<WarningSliceProps>) {
-  console.log(slice);
   return (
     <Container>
-      {/* {/* <PrismicRichText field={slice.primary.title} /> */}
       <PrismicRichText field={slice.primary.warning} />
     </Container>
   );
