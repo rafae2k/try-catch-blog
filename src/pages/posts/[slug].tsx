@@ -1,4 +1,3 @@
-import React from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { GetStaticPaths, NextPage } from "next";
@@ -11,12 +10,17 @@ import PostInfo from "@components/PostInfo";
 import NextPreviousPosts from "@components/NextPreviousPosts";
 import Comments from "@components/Comments";
 
-import { Article, Header, Content } from "../../styles/pages/posts/slug.styles";
 import TextSlice from "@components/Slices/TextSlice";
 import CodeSnippet from "@components/Slices/CodeSnippet";
 import ImageSlice from "@components/Slices/ImageSlice";
 import { SlicesProps } from "@definitions/Interfaces/prismic/slices";
 import WarningSlice from "@components/Slices/WarningSlice";
+import {
+  Article,
+  Header,
+  Content,
+  ImgContainer,
+} from "@styles/pages/posts/slug.styles";
 
 type Props = {
   post: {
@@ -47,12 +51,14 @@ const Post: NextPage<Props> = ({ post }) => {
         <title>{post.title} | Try...Catch</title>
       </Head>
       <Wrapper>
-        <Image
-          src={post.thumbnail.url}
-          alt={post.thumbnail.alt}
-          width={800}
-          height={450}
-        />
+        <ImgContainer>
+          <Image
+            src={post.thumbnail.url}
+            alt={post.thumbnail.alt}
+            layout="fill"
+            priority
+          />
+        </ImgContainer>
         <Article>
           <Header>
             <h1>{post.title}</h1>
