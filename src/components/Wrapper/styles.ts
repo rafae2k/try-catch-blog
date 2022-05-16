@@ -5,4 +5,5 @@ export const Container = styled.main`
   margin: 5rem auto;
   width: 100%;
   padding: 7rem 2rem;
+  position: relative;
 `;
