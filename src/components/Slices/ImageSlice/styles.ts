@@ -7,9 +7,10 @@ export const Container = styled.figure`
   align-items: center;
   gap: 1rem;
   font-size: 1.4rem;
+  position: relative;
+  width: 100%;
+  min-height: 40rem;
 
-  img {
-    max-height: 45rem;
-    width: auto;
-  }
+  border-radius: 2rem;
+  overflow: hidden;
 `;

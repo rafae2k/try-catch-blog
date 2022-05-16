@@ -16,8 +16,7 @@ function ImageSlice({ slice }: SliceComponentProps<ImageSliceProps>) {
       <Image
         src={slice.primary.image.url}
         alt={slice.primary.image.alt as string}
-        width={slice.primary.image.dimensions.width}
-        height={slice.primary.image.dimensions.height}
+        layout="fill"
       />
       <figcaption>{slice.primary.image.alt}</figcaption>
     </Container>
