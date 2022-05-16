@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import * as prismicT from "@prismicio/types";
 import { createClient } from "@services/prismic";
 
-import { Container } from "./styles";
+import { Container, NextPrevContainer } from "./styles";
 
 type PrismicDocumentPage = prismicT.PrismicDocument;
 
@@ -28,18 +28,18 @@ function NextPreviousPosts() {
     <Container>
       {posts.length > 0 && posts[postIndex - 1] && (
         <Link href={`/posts/${posts[postIndex - 1].uid}`} passHref>
-          <div>
+          <NextPrevContainer>
             <h3>Post Anterior</h3>
-            <p>{posts[postIndex - 1].data.title[0].text}</p>
-          </div>
+            <p>{posts[postIndex - 1].data.title}</p>
+          </NextPrevContainer>
         </Link>
       )}
       {posts.length > 0 && posts[postIndex + 1] && (
         <Link href={`/posts/${posts[postIndex + 1].uid}`} passHref>
-          <div>
+          <NextPrevContainer>
             <h3>Próximo post</h3>
-            <p>{posts[postIndex + 1].data.title[0].text}</p>
-          </div>
+            <p>{posts[postIndex + 1].data.title}</p>
+          </NextPrevContainer>
         </Link>
       )}
     </Container>
