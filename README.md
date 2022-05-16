@@ -133,7 +133,7 @@ To enable `yarn` follow this steps.
 - [x] Multi-language Support - i18y
   - [x] Portuguese (pt-BR)
   - [x] English (en-US)
-- [ ] Fix Next-Image component
+- [x] Fix Next-Image component
 - [ ] Tweek framer motion and header auto-hide on Mobile devices
 - [ ] Write 100 posts.
 
