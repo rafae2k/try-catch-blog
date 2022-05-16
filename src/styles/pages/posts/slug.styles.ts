@@ -1,5 +1,23 @@
 import styled from "styled-components";
 
+export const ImgContainer = styled.div`
+  max-width: 70rem;
+  min-width: 100%;
+  height: 45rem;
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
+
+  img {
+    min-height: 101% !important;
+    min-width: 101% !important;
+  }
+
+  @media (max-width: 700px) {
+    height: 25rem;
+  }
+`;
+
 export const Article = styled.article`
   margin-top: 4rem;
   font-size: calc(1.4rem);
